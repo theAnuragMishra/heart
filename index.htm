@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Heart</title>
+
+    <style>
+        .heart {
+            position: absolute;
+            background-color: pink;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            transform: rotate(-45deg);
+
+
+
+        }
+
+        .heart::before {
+            position: absolute;
+            top: -150px;
+            left: 0px;
+            content: "";
+            background-color: pink;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+
+        }
+
+        .heart::after {
+            position: absolute;
+            top: 0px;
+            left: 150px;
+            content: "";
+            background-color: pink;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heart" id="heart"></div>
+</body>
+
+</html>
